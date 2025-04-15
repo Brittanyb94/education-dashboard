@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education Dashboard - Brittany Blackmon</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>What Happens When the Department of Education Disappears?</h1>
+    <h2>Interactive Dashboard by Brittany Blackmon</h2>
+  </header>
+
+  <main>
+    <p>Select a state and a program to explore funding dependencies and projected outcomes.</p>
+    <label for="state">State:</label>
+    <select id="state">
+      <option value="Texas">Texas</option>
+      <option value="Mississippi">Mississippi</option>
+      <option value="California">California</option>
+    </select>
+    <label for="program">Program:</label>
+    <select id="program">
+      <option value="Title I">Title I</option>
+      <option value="IDEA">IDEA</option>
+      <option value="Pell Grants">Pell Grants</option>
+    </select>
+
+    <div class="chart" id="barChart">
+      <h3>Federal Funding Dependency</h3>
+      <svg></svg>
+    </div>
+
+    <div class="chart" id="donutChart">
+      <h3>Program Impact Breakdown</h3>
+      <svg></svg>
+    </div>
+
+    <div class="chart" id="lineChart">
+      <h3>Projected Graduation Rate</h3>
+      <svg></svg>
+    </div>
+  </main>
+
+  <footer>
+    <p>Data Sources: NCES, US Dept. of Ed, Rockefeller Institute (simulated data)</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
